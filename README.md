@@ -93,16 +93,10 @@ every 10 minutes. Since this testnet-in-box uses Bitcoin Core's (bitcoind)
 regtest mode, we are able to generate a block on a private network
 instantly using a simple command.
 
-To generate a block:
+To generate some blocks: (be sure to change the ADDRESS value below to your target)
 
 ```
-$ make generate
-```
-
-To generate more than 1 block:
-
-```
-$ make generate BLOCKS=10
+$ make generate BLOCKS=10 ADDRESS=mxwPtt399zVrR62ebkTWL4zbnV1ASdZBQr
 ```
 
 ## Need to generate at least 100 blocks before there will be a balance in the first wallet
